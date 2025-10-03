@@ -1,0 +1,188 @@
+/* Basic Reset and Fonts */
+:root {
+    --primary-color: #0056b3; /* A professional blue */
+    --secondary-color: #f4f4f9;
+    --text-color: #333;
+    --bg-color: #ffffff;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.section-padding {
+    padding: 60px 0;
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.2em;
+    margin-bottom: 30px;
+}
+
+/* Header and Navigation */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #004085;
+    border-radius: 4px;
+}
+
+/* Hero Section */
+#hero {
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 100px 0;
+}
+
+#hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Accolades Section Styling (Key to the Update Provision) */
+.bg-light {
+    background-color: var(--secondary-color);
+}
+
+.subtitle {
+    text-align: center;
+    font-style: italic;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.accolade-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.accolade-item {
+    background-color: var(--bg-color);
+    border-left: 5px solid var(--primary-color);
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.accolade-item:hover {
+    transform: translateY(-5px);
+}
+
+.accolade-item h3 {
+    margin-top: 0;
+    text-align: left;
+    color: #222;
+}
+
+.accolade-item .date {
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+/* Contact Section */
+.contact-links {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.contact-link {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.contact-link:hover {
+    background-color: #004085;
+}
+
+.contact-link i {
+    margin-right: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul {
+        margin-top: 15px;
+    }
+    nav ul li a {
+        margin: 0 5px;
+    }
+    .accolade-list {
+        padding: 0 10px;
+    }
+}
